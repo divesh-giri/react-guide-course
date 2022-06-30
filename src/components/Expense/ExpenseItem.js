@@ -6,6 +6,7 @@ const ExpenseItem = (props) => {
   const expenseDate = props.date;
   const expenseTitle = props.title;
   const expenseAmount = props.amount;
+
   return (
     <Card className="expense-item">
       <ExpenseDate date={expenseDate} />
