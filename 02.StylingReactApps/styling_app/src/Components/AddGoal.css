@@ -1,0 +1,23 @@
+.container {
+  font-weight: 700;
+  width: 500px;
+  padding: 50px;
+  margin: 50px auto;
+  background-color: #dedede;
+  border-radius: 8px;
+}
+
+.form-input {
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.btn-submit button {
+  background-color: purple;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  font-weight: 900;
+}
