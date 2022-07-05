@@ -1,0 +1,21 @@
+.userForm {
+  padding: 10px;
+}
+
+.formElement {
+  padding: 10px;
+}
+
+.formElement input {
+  padding: 5px;
+  width: 100%;
+}
+
+.btn-submit {
+  margin: 20px;
+  padding: 8px;
+  border: none;
+  background-color: purple;
+  font-weight: 500;
+  color: white;
+}
