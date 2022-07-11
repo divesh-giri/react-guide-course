@@ -1,0 +1,11 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 0.1px;
+}
+
+.item-price-count {
+  display: flex;
+  gap: 30px;
+}

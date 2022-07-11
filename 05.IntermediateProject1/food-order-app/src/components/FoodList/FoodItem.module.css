@@ -1,0 +1,21 @@
+.food-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10px;
+}
+
+.food-item-order-details form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.amount-input {
+  display: flex;
+  gap: 8px;
+}
+
+.amount-input input {
+  width: 35px;
+}

@@ -1,0 +1,31 @@
+.backdrop {
+  backdrop-filter: blur(4px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.cart-container {
+  padding: 10px 20px;
+  position: absolute;
+  width: 500px;
+  background-color: white;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
