@@ -28,6 +28,32 @@ const cartReducer = (state, action) => {
       };
     }
   }
+  if (action.type === "REMOVE_ITEM") {
+    let item_remove_price;
+    let element_remove_index = -1;
+    const newItems = state.items.map((item, index) => {
+      if (item.id === action.id) {
+        item_remove_price = item.price;
+        if (item.amount === 1) {
+          element_remove_index = index;
+          return null;
+        } else {
+          return {
+            ...item,
+            amount: item.amount - 1,
+          };
+        }
+      }
+      return item;
+    });
+    if (element_remove_index !== -1) {
+      newItems.splice(element_remove_index, 1);
+    }
+    return {
+      items: newItems,
+      totalAmount: state.totalAmount - item_remove_price,
+    };
+  }
   return defaultCartState;
 };
 
@@ -40,7 +66,9 @@ const CartProvider = (props) => {
     dispatchCartStateAction({ type: "ADD_ITEM", item: item });
   };
 
-  const removeItemFromCartHandler = (id) => {};
+  const removeItemFromCartHandler = (id) => {
+    dispatchCartStateAction({ type: "REMOVE_ITEM", id: id });
+  };
   useReducer();
   const cartContext = {
     items: cartState.items,
